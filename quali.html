@@ -1,16 +1,29 @@
 <!DOCTYPE html>
 <html>
     <link rel="stylesheet" href="landing.css">
+    <script>
+        function toggleTheme() {
+            var theme = document.getElementsByTagName('link')[0];
+            if (theme.getAttribute('href') == 'landing.css') {
+                theme.setAttribute('href', 'changed.css');
+            }
+            else {
+                theme.setAttribute('href', 'landing.css');
+            }
+        }
+    </script>
     <header role="banner">
         <footer style="width:100%">
-            <button style="width:23%" onclick="location.href='tech.html'">Portfolio</button>
-            <button style="width:23%" onclick="location.href='index.html'">About Me</button>
-            <button style="width:23%" onclick="location.href='service.html'">Service</button>
-            <button style="width:23%" onclick="location.href='ai.html'">AI</button>
-    </header>
+            <button style="width:18%" onclick="location.href='tech.html'">Portfolio</button>
+            <button style="width:18%" onclick="location.href='index.html'">About Me</button>
+            <button style="width:18%" onclick="location.href='service.html'">Service</button>
+            <button style="width:18%" onclick="location.href='ai.html'">AI</button>
+            <button style="width:18%" onclick="toggleTheme()">Switch</button>
+        </header>
     <body>
         <div class="resume">
             <h2>Resume</h2>
+            <a href="https://scholars.library.tamu.edu/vivo/display/n954c969e/Persons/View%20All">TAMU Agriculture and Life Sciences</a>
             <html xmlns:v="urn:schemas-microsoft-com:vml"
             xmlns:o="urn:schemas-microsoft-com:office:office"
             xmlns:w="urn:schemas-microsoft-com:office:word"

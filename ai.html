@@ -1,43 +1,64 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="landing.css">
-    <title>Web Scraping Ethics</title>
+    <script>
+        function toggleTheme() {
+            var theme = document.getElementsByTagName('link')[0];
+            if (theme.getAttribute('href') == 'landing.css') {
+                theme.setAttribute('href', 'changed.css');
+            }
+            else {
+                theme.setAttribute('href', 'landing.css');
+            }
+        }
+    </script>
+    <title>Web Scraping and Ethics</title>
 </head>
 <body>
     <header role="banner">
-        <nav>
-            <ul>
-                <li><a href="tech.html">Portfolio</a></li>
-                <li><a href="quali.html">Qualifications</a></li>
-                <li><a href="service.html">Service</a></li>
-                <li><a href="index.html">About Me</a></li>
-            </ul>
-        </nav>
+        <footer style="width:100%">
+            <button style="width:18%" onclick="location.href='tech.html'">Portfolio</button>
+            <button style="width:18%" onclick="location.href='quali.html'">Qualifications</button>
+            <button style="width:18%" onclick="location.href='service.html'">Service</button>
+            <button style="width:18%" onclick="location.href='index.html'">About Me</button>
+            <button style="width:18%" onclick="toggleTheme()">Switch</button>
+        </footer>
     </header>
-    
-    <div class="content">
-        <h1 class="topic-heading">Unveiling the Ethics of Web Scraping</h1>
-
-        <h2 class="section-heading">The Moral Dilemma</h2>
-        <p class="section-content">
-            The practice of web scraping, the art of extracting data from websites, has been shrouded in ethical debates. Some of the primary concerns include:
+    <div class="techhead">
+        <h1 class="techhead">Web Scraping and Ethics</h1>
+        <p>
+            Web scraping is a powerful tool that allows users to extract data from websites for various purposes. However, it raises ethical concerns and challenges. Here, we explore the questionable ethics behind web scraping and discuss what web scrapers can do to lessen their impact.
         </p>
-        <ul class="ethics-list">
-            <li class="ethics-item">Privacy: Collecting personal data without consent infringes on user privacy.</li>
-            <li class="ethics-item">Server Overload: Aggressive scraping can disrupt website functionality and overload servers.</li>
-            <li class="ethics-item">Content Ownership: Republishing scraped content without proper attribution may infringe on copyrights.</li>
-        </ul>
 
-        <h2 class="section-heading">Mitigating the Impact</h2>
-        <p class="section-content">
-            Ethical web scrapers can take proactive steps to minimize their impact on the digital landscape:
+        <h2 class="projhead">Ethical Considerations</h2>
+        <p>
+            Web scraping can infringe on the privacy and terms of service of websites. Scraping without permission can lead to legal issues. It can also put a strain on servers, causing disruptions to the website's functionality.
         </p>
-        <ul class="impact-list">
-            <li class="impact-item">Respect Robots.txt: Always check and adhere to websites' "robots.txt" files for scraping permissions.</li>
-            <li class="impact-item">Rate Limiting: Implement rate limits to prevent overloading servers and causing disruptions.</li>
-            <li class="impact-item">Data Integrity: Handle scraped data responsibly and ensure its accuracy and relevance.</li>
-            <li class="impact-item">Transparency: Provide clear attribution when using or sharing scraped data to maintain transparency.</li>
+
+        <h2 class="projhead">Ways to Lessen Impact</h2>
+        <p>
+            1. **Respect Robots.txt**: Check a website's <a href="https://www.robotstxt.org/robotstxt.html" target="_blank" rel="noopener noreferrer">robots.txt</a> file to see if scraping is allowed. Respect the rules set by the website owner.
+        </p>
+        <p>
+            2. **Rate Limiting**: Implement rate limiting to avoid overloading a website's server with requests. This helps in being a responsible scraper.
+        </p>
+        <p>
+            3. **Data Use Policy**: Create a clear data use policy, and make sure the scraped data is used ethically and legally.
+        </p>
+
+        <h2 class="projhead">Learn More</h2>
+        <p>
+            For more information on web scraping ethics and best practices, consider exploring these credible sources:
+        </p>
+        <ul>
+            <li class="lin1"><a href="https://www.scrapinghub.com/ethical-web-scraping/" target="_blank" rel="noopener noreferrer">Ethical Web Scraping: A Practical Guide</a></li>
+            <li class="lin1"><a href="https://en.wikipedia.org/wiki/Web_scraping#Legal_issues" target="_blank" rel="noopener noreferrer">Legal Issues Surrounding Web Scraping</a></li>
+            <li class="lin1"><a href="https://www.benfrederickson.com/robotstxt/" target="_blank" rel="noopener noreferrer">Understanding the robots.txt File</a></li>
+            <li class="lin1"><a href="https://www.cloudflare.com/learning/bots/what-is-web-scraping/" target="_blank" rel="noopener noreferrer">What Is Web Scraping?</a></li>
+            <li class="lin1"><a href="https://www.apify.com/blog/web-scraping-guide" target="_blank" rel="noopener noreferrer">The Definitive Guide to Web Scraping</a></li>
         </ul>
     </div>
 </body>

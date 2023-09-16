@@ -1,13 +1,25 @@
 <!DOCTYPE html>
 <html>
     <link rel="stylesheet" href="landing.css">
+    <script>
+        function toggleTheme() {
+            var theme = document.getElementsByTagName('link')[0];
+            if (theme.getAttribute('href') == 'landing.css') {
+                theme.setAttribute('href', 'changed.css');
+            }
+            else {
+                theme.setAttribute('href', 'landing.css');
+            }
+        }
+    </script>
     <header role="banner">
         <footer style="width:100%">
-            <button style="width:23%" onclick="location.href='tech.html'">Portfolio</button>
-            <button style="width:23%" onclick="location.href='quali.html'">Qualifications</button>
-            <button style="width:23%" onclick="location.href='index.html'">About Me</button>
-            <button style="width:23%" onclick="location.href='ai.html'">AI</button>
-    </header>
+            <button style="width:18%" onclick="location.href='tech.html'">Portfolio</button>
+            <button style="width:18%" onclick="location.href='quali.html'">Qualifications</button>
+            <button style="width:18%" onclick="location.href='Index.html'">About Me</button>
+            <button style="width:18%" onclick="location.href='ai.html'">AI</button>
+            <button style="width:18%" onclick="toggleTheme()">Switch</button>
+        </header>
     <body>
         <div class="techhead">
             <h2 class="techhead">Service</h2>
@@ -16,20 +28,36 @@
             <div class="projbod">
                 I have volunteered 156 hours total at the hospital's physical therapy department.
                 There, I ran errands, cared for patients, <br>and performed regular maintanence
-                checks on physical therapy equipment.
+                checks on physical therapy equipment. Volunteering there was easily one of my favorite
+                places to volunteer;<br> I really felt like I was making a difference. 
+                I would recommend it to anyone who wants to broaden their horizons <br>and meet 
+                people from all walks of life!
+            </div>
+            <div class="lin2">
+                <a href="https://www.va.gov/">https://www.va.gov/</a>
             </div>
 
             <h3 class="projhead">First Colony Library</h3>
             <div class="projbod">
                 I have volunteered over 70 hours at my local library when I am at home. There,
                 I got to know the staff very well while greeting/helping patrons, <br>organizing
-                shelves, and performing visitor counts. 
+                shelves, and performing visitor counts. I've loved books for as long as I can remember,
+                so volunteering here was a joy. <br> 
+                While its not for everyone, being able to help others who are in the shoes of my younger
+                self is something that I hope I can continue to do.
             </div>
+            <div class="lin2">
+                <a href="https://www.fortbend.lib.tx.us/about-us/location-hours-map/first-colony">First Colony Library</a>
+            </div>
+
             <h3 class="projhead">Planned</h3>
             <div class="projbod">
                 Over Thanksgiving and Winter break, I plan to volunteer at my local soup kitchen.
                 My mom and brother have been volunteering there <br> since the summer of 2023, and 
-                when the Fall 2023 semester lets out, I plan to join them there.  
+                when the Fall 2023 semester lets out, I plan to join them there.
+            </div>
+            <div class="lin2">
+                <a href="https://www.volunteerhou.org/need/detail/?need_id=321997">Soup Kitchen</a>
             </div>
         </div>
     </body>

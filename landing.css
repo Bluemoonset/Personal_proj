@@ -113,5 +113,28 @@ h3 {
     text-align:center;
 }
 
+.lin1{
+    font-size:20px;
+}
+
+a:link{
+    color: black;
+}
+
+a:link:hover {
+    color: grey;
+}
+
+a:active {
+    color:blue;
+}
+
+a:visited {
+    color:violet;
+}
+
+.lin2 {
+    text-align:left;
+}
 
 

@@ -1,13 +1,25 @@
 <!DOCTYPE html>
 <html>
     <link rel="stylesheet" href="landing.css">
+    <script>
+        function toggleTheme() {
+            var theme = document.getElementsByTagName('link')[0];
+            if (theme.getAttribute('href') == 'landing.css') {
+                theme.setAttribute('href', 'changed.css');
+            }
+            else {
+                theme.setAttribute('href', 'landing.css');
+            }
+        }
+    </script>
     <header role="banner">
         <footer style="width:100%">
-            <button style="width:23%" onclick="location.href='tech.html'">Portfolio</button>
-            <button style="width:23%" onclick="location.href='quali.html'">Qualifications</button>
-            <button style="width:23%" onclick="location.href='service.html'">Service</button>
-            <button style="width:23%" onclick="location.href='ai.html'">AI</button>
-    </header>
+            <button style="width:18%" onclick="location.href='tech.html'">Portfolio</button>
+            <button style="width:18%" onclick="location.href='quali.html'">Qualifications</button>
+            <button style="width:18%" onclick="location.href='service.html'">Service</button>
+            <button style="width:18%" onclick="location.href='ai.html'">AI</button>
+            <button style="width:18%" onclick="toggleTheme()">Switch</button>
+        </header>
     <body>
         <div class="pfpcollection" width="500px" height="500px">
             <div class="pfp">
@@ -42,6 +54,9 @@
                 </div>   
                 <div class="name4">
                     <p>Computer Engineering student at Texas A&M University</p>
+                </div>
+                </div class="lin1">
+                    <a href="https://github.com/Bluemoonset/Personal_proj">Website Code</a>
                 </div>
             </div>
         </div>

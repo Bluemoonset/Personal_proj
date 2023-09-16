@@ -1,25 +1,41 @@
 <!DOCTYPE html>
 <html>
     <link rel="stylesheet" href="landing.css">
+    <script>
+        function toggleTheme() {
+            var theme = document.getElementsByTagName('link')[0];
+            if (theme.getAttribute('href') == 'landing.css') {
+                theme.setAttribute('href', 'changed.css');
+            }
+            else {
+                theme.setAttribute('href', 'landing.css');
+            }
+        }
+    </script>
     <header role="banner">
         <footer style="width:100%">
-            <button style="width:23%" onclick="location.href='index.html'">About Me</button>
-            <button style="width:23%" onclick="location.href='quali.html'">Qualifications</button>
-            <button style="width:23%" onclick="location.href='service.html'">Service</button>
-            <button style="width:23%" onclick="location.href='ai.html'">AI</button>
-    </header>
+            <button style="width:18%" onclick="location.href='index.html'">About Me</button>
+            <button style="width:18%" onclick="location.href='quali.html'">Qualifications</button>
+            <button style="width:18%" onclick="location.href='service.html'">Service</button>
+            <button style="width:18%" onclick="location.href='ai.html'">AI</button>
+            <button style="width:18%" onclick="toggleTheme()">Switch</button>
+        </header>
     <body>
         <div class="techhead">
             <h2 class="techhead">Technical Projects</h2>
 
             <h3 class="projhead">Slickdeal scraper</h3>
             <div class="projbod">
-                A Python-based web-scraper for Slickdeals that would collect data from a 
+                A Python based web scraper for Slickdeals that would collect data from a 
                 search and provide the user with data such as the average <br>
                 price for the search item or what time of year would 
                 be most likely to have the best deals. Data would be stored <br>
                 inside Excel files and were readily available to view in the 
-                form of charts. 
+                form of charts. One can also manually manipulate the data into <br>
+                custom graphics thanks to this storage of information.
+                Unfortunately, Slickdeals has changed its UI <br>
+                recently, and the current iteration of this project will not work 
+                on the new site. An update is in progress.
             </div>
 
             <h3 class="projhead">Custom linux terminal</h3>
@@ -27,17 +43,23 @@
                 A terminal written in C++ for an operating systems class. This 
                 terminal replicated the functions of commonly used terminals like <br>
                 Ubuntu, being able to run commands, change directories, or even 
-                generate keys. 
+                generate keys. Creating a terminal such as this requires consideration <br>
+                for every command possible, and is not feasible for one person to create
+                a professional-level clone. Thus, it was designed only to perform all <br>
+                common commands, but does not to work for every command.
             </div>
-            <h3 class="projhead">Planned</h3>
+            <h3 class="projhead">Planned Future Projects</h3>
             <div class="projbod">
                 A project that I have wanted to start for a long while is
-                a depth-perception camera. I originally planned to have <br>
+                a depth perception camera. I originally planned to have <br>
                 two cameras placed on mounts that could move left and right
-                which, combined with the same-time viewing from the cameras <br>
-                allow an accurate detection of distance from the camera.
+                which, combined with the same-time viewing from the cameras, <br>
+                would allow an accurate detection of distance from the camera.
                 If this project were to succeed, I'd like to expand upon it <br>
-                by integrating it into a phone plugin with its own app. 
+                by integrating it into a phone plugin with its own app; the 
+                device would plug into the phone through the charger port <br>
+                and then the app would display a camera and some text, where the 
+                text would show the distance of any object pointed to by the camera.
             </div>
         </div>
     </body>
