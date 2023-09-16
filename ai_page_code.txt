@@ -1,0 +1,189 @@
+Use the following html file and css file to create a new html file in a similar, but not too similar, format. The new file should have in depth information and contain at least 5 relevent links to credible websites containing sourced information. The topic of the new file should be about web scraping and the questionable ethics behind it and what web scrapers can do to lessen their impact. You must keep all links provided in the given HTML file in the final HTMLfile. The general formatting, especially for the header, should also be the same.
+
+HTML file:
+
+
+
+<!DOCTYPE html>
+<html>
+    <link rel="stylesheet" href="landing.css">
+    <script>
+        function toggleTheme() {
+            var theme = document.getElementsByTagName('link')[0];
+            if (theme.getAttribute('href') == 'landing.css') {
+                theme.setAttribute('href', 'changed.css');
+            }
+            else {
+                theme.setAttribute('href', 'landing.css');
+            }
+        }
+    </script>
+    <header role="banner">
+        <footer style="width:100%">
+            <button style="width:18%" onclick="location.href='tech.html'">Portfolio</button>
+            <button style="width:18%" onclick="location.href='quali.html'">Qualifications</button>
+            <button style="width:18%" onclick="location.href='service.html'">Service</button>
+            <button style="width:18%" onclick="location.href='index.html'">About Me</button>
+            <button style="width:18%" onclick="toggleTheme()">Switch</button>
+        </header>
+    <body>
+        <div class="techhead">
+            <h2 class="techhead">Service</h2>
+
+            <h3 class="projhead">title </h3>
+            <div class="projbod">
+                info
+            </div>
+
+            <h3 class="projhead">title </h3>
+            <div class="projbod">
+                info
+            </div>
+            <h3 class="projhead">Planned</h3>
+            <div class="projbod">
+                info
+            </div>
+        </div>
+    </body>
+</html>
+
+CSS file:
+button {
+  border: 1px black;
+  color: black;
+  padding: 10px 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  margin: 10px 5px;
+  cursor: pointer;
+  opacity: .75;
+  background-color:#87CEEB;
+}
+
+button:hover {
+    opacity: 1;
+}
+
+footer {
+    position: absolute;
+    text-align: center;
+    float: left;
+    padding: 5px;
+}
+
+header {
+    object-fit: fill;
+    background-image: url(blue.png);
+    background-size: contain;
+    max-height: 100px;
+    min-height: 80px;
+    background-color: white;
+    margin: 0 0 0 0;
+    padding: 0;
+}
+
+body {
+    background-color: #87CEEB;
+    margin: 0 0 0 0;
+    padding: 0;
+}
+
+.name1 p {
+    font-size: 50px;
+    letter-spacing: 10px;
+    text-indent: 30px;
+}
+
+.name2 p {
+    font-size: 50px;
+    letter-spacing: 10px;
+    text-indent: 30px;
+}
+
+.name3 p {
+    font-size: 50px;
+    letter-spacing: 10px;
+    text-indent: 30px;
+}
+
+.name4 p {
+    font-size:20px;
+    text-indent:40px;
+}
+
+body {
+    min-height: 300px;
+    min-width:300px;
+}
+
+.pfpcollection .pfp {
+    float:left;
+    height: 500px;
+    width:500px;
+}
+
+.pfpcollection .info {
+    float:right;
+    position:static;bottom:700px;
+    text-align: left;
+}
+
+.pfpcollection .info .infohead{
+    font-size:30px;
+}
+
+.pfpcollection .info .infobod{
+    font-size:20px;
+}
+
+h2 {
+    font-size: 50px;
+}
+
+.techhead {
+    text-align: center;
+}
+
+.projhead {
+    text-align: left;
+}
+
+.projbod {
+    text-align: left;
+    font-size: 20px;
+}
+
+h3 {
+    font-size :30px;
+}
+
+.resume {
+    text-align:center;
+}
+
+.lin1{
+    font-size:20px;
+}
+
+a:link{
+    color: black;
+}
+
+a:link:hover {
+    color: grey;
+}
+
+a:active {
+    color:blue;
+}
+
+a:visited {
+    color:violet;
+}
+
+.lin2 {
+    text-align:left;
+}
+
